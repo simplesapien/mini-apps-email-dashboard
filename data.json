@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-10-16T20:04:33.775585+00:00",
+  "mode": "static",
+  "reports": [
+    {
+      "key": "initial-1",
+      "cohort": "Initial",
+      "email_number": 1,
+      "message_id": "XnYUy7",
+      "sent_after": "2026-10-12T00:00:00-07:00",
+      "sent_before": "2026-10-13T00:00:00-07:00",
+      "delivered": 82,
+      "human_clicks": 0,
+      "website_visitors": 17,
+      "app_visitors": 6,
+      "engaged_users": 5,
+      "apps": [
+        {
+          "name": "Ari",
+          "visited": 4,
+          "engaged": 2
+        },
+        {
+          "name": "Nutrition",
+          "visited": 3,
+          "engaged": 3
+        },
+        {
+          "name": "Nia Pulse",
+          "visited": 2,
+          "engaged": 0
+        },
+        {
+          "name": "Supplements",
+          "visited": 1,
+          "engaged": 2
+        }
+      ],
+      "mapped": null,
+      "missing": null,
+      "ambiguous": null,
+      "bot_clicks": null,
+      "report_through": null,
+      "error": null
+    },
+    {
+      "key": "redraw-1",
+      "cohort": "Redraw",
+      "email_number": 1,
+      "message_id": "U84USm",
+      "sent_after": "2026-10-12T00:00:00-07:00",
+      "sent_before": "2026-10-13T00:00:00-07:00",
+      "delivered": 103,
+      "human_clicks": 0,
+      "website_visitors": 33,
+      "app_visitors": 17,
+      "engaged_users": 10,
+      "apps": [
+        {
+          "name": "Ari",
+          "visited": 11,
+          "engaged": 10
+        },
+        {
+          "name": "Nia Pulse",
+          "visited": 6,
+          "engaged": 0
+        },
+        {
+          "name": "Community",
+          "visited": 3,
+          "engaged": 0
+        },
+        {
+          "name": "Supplements",
+          "visited": 2,
+          "engaged": 0
+        },
+        {
+          "name": "Nutrition",
+          "visited": 1,
+          "engaged": 1
+        },
+        {
+          "name": "Sauna & Cold Plunge",
+          "visited": 1,
+          "engaged": 0
+        }
+      ],
+      "mapped": null,
+      "missing": null,
+      "ambiguous": null,
+      "bot_clicks": null,
+      "report_through": null,
+      "error": null
+    },
+    {
+      "key": "initial-2",
+      "cohort": "Initial",
+      "email_number": 2,
+      "message_id": "XVnGPk",
+      "sent_after": "2026-10-15T00:00:00-07:00",
+      "sent_before": "2026-10-16T00:00:00-07:00",
+      "delivered": 81,
+      "human_clicks": 0,
+      "website_visitors": 5,
+      "app_visitors": 2,
+      "engaged_users": 2,
+      "apps": [
+        {
+          "name": "Nia Pulse",
+          "visited": 2,
+          "engaged": 0
+        },
+        {
+          "name": "Nutrition",
+          "visited": 2,
+          "engaged": 2
+        },
+        {
+          "name": "Supplements",
+          "visited": 1,
+          "engaged": 1
+        }
+      ],
+      "mapped": null,
+      "missing": null,
+      "ambiguous": null,
+      "bot_clicks": null,
+      "report_through": null,
+      "error": null
+    },
+    {
+      "key": "redraw-2",
+      "cohort": "Redraw",
+      "email_number": 2,
+      "message_id": "U3rEwX",
+      "sent_after": "2026-10-15T00:00:00-07:00",
+      "sent_before": "2026-10-16T00:00:00-07:00",
+      "delivered": 103,
+      "human_clicks": 3,
+      "website_visitors": 17,
+      "app_visitors": 7,
+      "engaged_users": 4,
+      "apps": [
+        {
+          "name": "Ari",
+          "visited": 3,
+          "engaged": 3
+        },
+        {
+          "name": "Community",
+          "visited": 2,
+          "engaged": 0
+        },
+        {
+          "name": "Nia Pulse",
+          "visited": 3,
+          "engaged": 0
+        },
+        {
+          "name": "Nutrition",
+          "visited": 2,
+          "engaged": 1
+        },
+        {
+          "name": "Sauna & Cold Plunge",
+          "visited": 1,
+          "engaged": 0
+        },
+        {
+          "name": "Supplements",
+          "visited": 2,
+          "engaged": 0
+        }
+      ],
+      "mapped": null,
+      "missing": null,
+      "ambiguous": null,
+      "bot_clicks": null,
+      "report_through": null,
+      "error": null
+    }
+  ]
+}

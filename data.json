@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T20:04:33.775585+00:00",
+  "generated_at": "2026-10-19T17:20:09+00:00",
   "mode": "static",
   "reports": [
     {
@@ -11,14 +11,19 @@
       "sent_before": "2026-10-13T00:00:00-07:00",
       "delivered": 82,
       "human_clicks": 0,
-      "website_visitors": 17,
-      "app_visitors": 6,
-      "engaged_users": 5,
+      "website_visitors": 19,
+      "app_visitors": 7,
+      "engaged_users": 6,
       "apps": [
         {
           "name": "Ari",
-          "visited": 4,
-          "engaged": 2
+          "visited": 6,
+          "engaged": 3
+        },
+        {
+          "name": "Community",
+          "visited": 1,
+          "engaged": 0
         },
         {
           "name": "Nutrition",
@@ -27,7 +32,7 @@
         },
         {
           "name": "Nia Pulse",
-          "visited": 2,
+          "visited": 3,
           "engaged": 0
         },
         {
@@ -52,14 +57,14 @@
       "sent_before": "2026-10-13T00:00:00-07:00",
       "delivered": 103,
       "human_clicks": 0,
-      "website_visitors": 33,
-      "app_visitors": 17,
-      "engaged_users": 10,
+      "website_visitors": 37,
+      "app_visitors": 18,
+      "engaged_users": 12,
       "apps": [
         {
           "name": "Ari",
-          "visited": 11,
-          "engaged": 10
+          "visited": 13,
+          "engaged": 12
         },
         {
           "name": "Nia Pulse",
@@ -78,7 +83,7 @@
         },
         {
           "name": "Nutrition",
-          "visited": 1,
+          "visited": 2,
           "engaged": 1
         },
         {
@@ -103,13 +108,23 @@
       "sent_before": "2026-10-16T00:00:00-07:00",
       "delivered": 81,
       "human_clicks": 0,
-      "website_visitors": 5,
-      "app_visitors": 2,
-      "engaged_users": 2,
+      "website_visitors": 10,
+      "app_visitors": 4,
+      "engaged_users": 3,
       "apps": [
         {
+          "name": "Ari",
+          "visited": 3,
+          "engaged": 1
+        },
+        {
+          "name": "Community",
+          "visited": 1,
+          "engaged": 0
+        },
+        {
           "name": "Nia Pulse",
-          "visited": 2,
+          "visited": 3,
           "engaged": 0
         },
         {
@@ -139,18 +154,18 @@
       "sent_before": "2026-10-16T00:00:00-07:00",
       "delivered": 103,
       "human_clicks": 3,
-      "website_visitors": 17,
-      "app_visitors": 7,
-      "engaged_users": 4,
+      "website_visitors": 23,
+      "app_visitors": 8,
+      "engaged_users": 5,
       "apps": [
         {
           "name": "Ari",
-          "visited": 3,
-          "engaged": 3
+          "visited": 4,
+          "engaged": 4
         },
         {
           "name": "Community",
-          "visited": 2,
+          "visited": 3,
           "engaged": 0
         },
         {

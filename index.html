@@ -1,145 +1,71 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="300">
-  <title>Mini Apps Email Performance</title>
-  <style>
-    :root { color-scheme: light; --ink:#18201d; --muted:#68716d; --line:#dce2df; --paper:#f4f6f5; --card:#fff; --accent:#145b43; --soft:#e3f2eb; --warn:#fff5d8; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--paper); color:var(--ink); font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    main { width:min(1180px,calc(100% - 32px)); margin:40px auto 72px; }
-    header { display:flex; justify-content:space-between; gap:24px; align-items:end; margin-bottom:24px; }
-    h1 { margin:0 0 4px; font-size:clamp(28px,4vw,44px); letter-spacing:-.035em; }
-    h2 { margin:2px 0 0; font-size:24px; }
-    p { margin:0; }
-    .status { text-align:right; color:var(--muted); }
-    .status strong { display:block; color:var(--accent); }
-    .caveat { background:var(--soft); border:1px solid #c9e4d7; border-radius:16px; margin-bottom:20px; padding:18px 20px; }
-    .caveat h2 { font-size:17px; margin:0 0 7px; }
-    .caveat p { color:#315448; }
-    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-    .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px; box-shadow:0 8px 28px rgba(18,40,31,.05); }
-    .card-heading { display:flex; justify-content:space-between; align-items:start; margin-bottom:18px; }
-    .eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
-    .message-id { background:var(--soft); border-radius:999px; color:var(--accent); font:12px ui-monospace,SFMono-Regular,monospace; padding:5px 9px; }
-    .warning { background:var(--warn); border-radius:10px; margin:-4px 0 16px; padding:10px 12px; font-size:13px; }
-    .metrics { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-bottom:20px; }
-    .metric { border:1px solid var(--line); border-radius:12px; padding:12px; }
-    .metric-label,.metric small { color:var(--muted); display:block; }
-    .metric strong { display:block; font-size:25px; letter-spacing:-.025em; margin:3px 0 1px; }
-    .metric small { font-size:12px; }
-    table { border-collapse:collapse; width:100%; }
-    th,td { border-bottom:1px solid var(--line); padding:9px 4px; text-align:right; }
-    th:first-child,td:first-child { text-align:left; }
-    th { color:var(--muted); font-size:12px; font-weight:600; text-transform:uppercase; }
-    .empty { color:var(--muted); text-align:center !important; }
-    .muted { color:var(--muted); font-size:12px; margin-top:10px; }
-    footer { color:var(--muted); margin-top:22px; font-size:13px; }
-    @media (max-width:760px) { .grid { grid-template-columns:1fr; } header { align-items:start; flex-direction:column; } .status { text-align:left; } }
-  </style>
-</head>
-<body>
-  <main>
-    <header>
-      <div><h1>Mini Apps Email Performance</h1><p>Initial and redraw cohorts, measured after each email delivery.</p></div>
-      <div class="status"><strong>Static snapshot — refreshed manually</strong>Updated Oct 19, 2026 at 10:20 AM MST</div>
-    </header>
-    <section class="caveat">
-      <h2>How to read these numbers</h2>
-      <p>Only the product user IDs belonging to actual email recipients are counted after the send. Post-send activity is a strong signal, but it does not prove the email caused the visit: routine use, an earlier email, a product notification, a bookmark, or a workplace message could also bring someone back. Klaviyo-confirmed human clicks are shown separately.</p>
-    </section>
-    <div class="grid">
-    <section class="card">
-      <div class="card-heading">
-        <div>
-          <span class="eyebrow">Initial cohort</span>
-          <h2>Email 1</h2>
-        </div>
-        <span class="message-id">XnYUy7</span>
-      </div>
-      
-      <div class="metrics">
-        <div class="metric"><span class="metric-label">Klaviyo human CTR</span><strong>0.0%</strong><small>0 of 82</small></div>
-        <div class="metric"><span class="metric-label">Post-send visitors</span><strong>23.2%</strong><small>19 of 82</small></div>
-        <div class="metric"><span class="metric-label">Reached a mini app</span><strong>8.5%</strong><small>7 of 82</small></div>
-        <div class="metric"><span class="metric-label">Meaningfully engaged</span><strong>85.7%</strong><small>6 of 7 mini-app visitors</small></div>
-      </div>
-      <table>
-        <thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead>
-        <tbody><tr><td>Ari</td><td>6</td><td>3</td></tr><tr><td>Community</td><td>1</td><td>0</td></tr><tr><td>Nutrition</td><td>3</td><td>3</td></tr><tr><td>Nia Pulse</td><td>3</td><td>0</td></tr><tr><td>Supplements</td><td>1</td><td>2</td></tr></tbody>
-      </table>
-      <p class="muted">No other apps had visits or meaningful engagement.</p>
-    </section>
-    
-    <section class="card">
-      <div class="card-heading">
-        <div>
-          <span class="eyebrow">Redraw cohort</span>
-          <h2>Email 1</h2>
-        </div>
-        <span class="message-id">U84USm</span>
-      </div>
-      
-      <div class="metrics">
-        <div class="metric"><span class="metric-label">Klaviyo human CTR</span><strong>0.0%</strong><small>0 of 103</small></div>
-        <div class="metric"><span class="metric-label">Post-send visitors</span><strong>35.9%</strong><small>37 of 103</small></div>
-        <div class="metric"><span class="metric-label">Reached a mini app</span><strong>17.5%</strong><small>18 of 103</small></div>
-        <div class="metric"><span class="metric-label">Meaningfully engaged</span><strong>66.7%</strong><small>12 of 18 mini-app visitors</small></div>
-      </div>
-      <table>
-        <thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead>
-        <tbody><tr><td>Ari</td><td>13</td><td>12</td></tr><tr><td>Nia Pulse</td><td>6</td><td>0</td></tr><tr><td>Community</td><td>3</td><td>0</td></tr><tr><td>Supplements</td><td>2</td><td>0</td></tr><tr><td>Nutrition</td><td>2</td><td>1</td></tr><tr><td>Sauna &amp; Cold Plunge</td><td>1</td><td>0</td></tr></tbody>
-      </table>
-      <p class="muted">No other apps had visits or meaningful engagement.</p>
-    </section>
-    
-    <section class="card">
-      <div class="card-heading">
-        <div>
-          <span class="eyebrow">Initial cohort</span>
-          <h2>Email 2</h2>
-        </div>
-        <span class="message-id">XVnGPk</span>
-      </div>
-      
-      <div class="metrics">
-        <div class="metric"><span class="metric-label">Klaviyo human CTR</span><strong>0.0%</strong><small>0 of 81</small></div>
-        <div class="metric"><span class="metric-label">Post-send visitors</span><strong>12.3%</strong><small>10 of 81</small></div>
-        <div class="metric"><span class="metric-label">Reached a mini app</span><strong>4.9%</strong><small>4 of 81</small></div>
-        <div class="metric"><span class="metric-label">Meaningfully engaged</span><strong>75.0%</strong><small>3 of 4 mini-app visitors</small></div>
-      </div>
-      <table>
-        <thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead>
-        <tbody><tr><td>Ari</td><td>3</td><td>1</td></tr><tr><td>Community</td><td>1</td><td>0</td></tr><tr><td>Nia Pulse</td><td>3</td><td>0</td></tr><tr><td>Nutrition</td><td>2</td><td>2</td></tr><tr><td>Supplements</td><td>1</td><td>1</td></tr></tbody>
-      </table>
-      <p class="muted">No other apps had visits or meaningful engagement.</p>
-    </section>
-    
-    <section class="card">
-      <div class="card-heading">
-        <div>
-          <span class="eyebrow">Redraw cohort</span>
-          <h2>Email 2</h2>
-        </div>
-        <span class="message-id">U3rEwX</span>
-      </div>
-      
-      <div class="metrics">
-        <div class="metric"><span class="metric-label">Klaviyo human CTR</span><strong>2.9%</strong><small>3 of 103</small></div>
-        <div class="metric"><span class="metric-label">Post-send visitors</span><strong>22.3%</strong><small>23 of 103</small></div>
-        <div class="metric"><span class="metric-label">Reached a mini app</span><strong>7.8%</strong><small>8 of 103</small></div>
-        <div class="metric"><span class="metric-label">Meaningfully engaged</span><strong>62.5%</strong><small>5 of 8 mini-app visitors</small></div>
-      </div>
-      <table>
-        <thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead>
-        <tbody><tr><td>Ari</td><td>4</td><td>4</td></tr><tr><td>Community</td><td>3</td><td>0</td></tr><tr><td>Nia Pulse</td><td>3</td><td>0</td></tr><tr><td>Nutrition</td><td>2</td><td>1</td></tr><tr><td>Sauna &amp; Cold Plunge</td><td>1</td><td>0</td></tr><tr><td>Supplements</td><td>2</td><td>0</td></tr></tbody>
-      </table>
-      <p class="muted">No other apps had visits or meaningful engagement.</p>
-    </section>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="300"><title>Mini Apps Email Performance</title>
+<style>
+:root{color-scheme:light;--ink:#18201d;--muted:#68716d;--line:#dce2df;--paper:#f4f6f5;--card:#fff;--accent:#145b43;--soft:#e3f2eb;--warn:#fff5d8}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(1180px,calc(100% - 32px));margin:40px auto 72px}header{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:24px}h1{margin:0 0 4px;font-size:clamp(28px,4vw,44px);letter-spacing:-.035em}h2{margin:2px 0 0;font-size:24px}p{margin:0}.status{text-align:right;color:var(--muted)}.status strong{display:block;color:var(--accent)}.caveat,.lift{background:var(--soft);border:1px solid #c9e4d7;border-radius:16px;margin-bottom:20px;padding:18px 20px}.caveat h2,.lift h2{font-size:17px;margin:0 0 7px}.caveat p,.lift>p{color:#315448}.lift{background:var(--card);border-color:var(--line);padding:22px}.lift-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}.lift-metric{border:1px solid var(--line);border-radius:12px;padding:12px}.lift-metric span,.lift-metric small{display:block;color:var(--muted)}.lift-metric strong{display:block;font-size:20px;margin:3px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 28px rgba(18,40,31,.05)}.card-heading{display:flex;justify-content:space-between;align-items:start;margin-bottom:18px}.eyebrow{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.message-id{background:var(--soft);border-radius:999px;color:var(--accent);font:12px ui-monospace,SFMono-Regular,monospace;padding:5px 9px}.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:20px}.metric{border:1px solid var(--line);border-radius:12px;padding:12px}.metric span,.metric small{color:var(--muted);display:block}.metric strong{display:block;font-size:25px;letter-spacing:-.025em;margin:3px 0 1px}.metric small{font-size:12px}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid var(--line);padding:9px 4px;text-align:right}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-size:12px;font-weight:600;text-transform:uppercase}.table-wrap{overflow-x:auto}.muted{color:var(--muted);font-size:12px;margin-top:10px}details{margin-top:14px}summary{color:var(--accent);cursor:pointer;font-weight:650}footer{color:var(--muted);margin-top:22px;font-size:13px}@media(max-width:760px){.grid,.lift-summary{grid-template-columns:1fr}header{align-items:start;flex-direction:column}.status{text-align:left}}
+</style></head><body><main>
+<header><div><h1>Mini Apps Email Performance</h1><p>Initial and redraw cohorts, measured after each email delivery.</p></div><div class="status"><strong>Static snapshot — refreshed manually</strong>Through Oct 22, 2026 at 9:18 PM MST</div></header>
+<section class="caveat"><h2>How to read these numbers</h2><p>Only product user IDs mapped to confirmed Klaviyo recipients are counted. Post-send activity is associated with the send, but does not prove the email caused it. Routine use or another nudge may be responsible. Email cards are cumulative through one cutoff, overlap, and must not be added together. Klaviyo-confirmed human clicks are shown separately.</p></section>
+<section class="lift"><span class="eyebrow">Matched equal-length comparison</span><h2>No aggregate campaign lift measured</h2><p>The same 185 Email 1 recipients were compared for 10 days and 4 hours before versus after the first send. This is a before/after association, not a causal test.</p><div class="lift-summary"><div class="lift-metric"><span>Website visitors</span><strong>66.5% → 45.4%</strong><small>123 → 84 people · -21.1 pp</small></div><div class="lift-metric"><span>Reached a mini app</span><strong>25.9% → 19.5%</strong><small>48 → 36 people · -6.5 pp</small></div><div class="lift-metric"><span>Meaningfully engaged</span><strong>14.6% → 14.1%</strong><small>27 → 26 people · -0.5 pp</small></div></div><div class="table-wrap"><table><thead><tr><th>Cohort</th><th>Website</th><th>Mini app</th><th>Engaged</th></tr></thead><tbody><tr><td>Initial</td><td>43.9% → 34.1% (-9.8 pp)</td><td>24.4% → 11.0% (-13.4 pp)</td><td>12.2% → 8.5% (-3.7 pp)</td></tr><tr><td>Redraw</td><td>84.5% → 54.4% (-30.1 pp)</td><td>27.2% → 26.2% (-1.0 pp)</td><td>16.5% → 18.4% (+1.9 pp)</td></tr><tr><td>Combined</td><td>66.5% → 45.4% (-21.1 pp)</td><td>25.9% → 19.5% (-6.5 pp)</td><td>14.6% → 14.1% (-0.5 pp)</td></tr></tbody></table></div><details><summary>Combined mini-app activity before → after</summary><div class="table-wrap"><table><thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead><tbody><tr><td>Ari</td><td>31 → 30</td><td>23 → 24</td></tr><tr><td>Nia Pulse</td><td>1 → 11</td><td>0 → 0</td></tr><tr><td>Community</td><td>8 → 7</td><td>1 → 0</td></tr><tr><td>Nutrition</td><td>14 → 6</td><td>4 → 4</td></tr><tr><td>Supplements</td><td>4 → 3</td><td>2 → 2</td></tr><tr><td>Brain Health</td><td>6 → 0</td><td>1 → 0</td></tr><tr><td>Blood Pressure</td><td>2 → 2</td><td>0 → 2</td></tr><tr><td>Hearing</td><td>1 → 1</td><td>0 → 0</td></tr><tr><td>Sauna &amp; Cold Plunge</td><td>0 → 1</td><td>0 → 0</td></tr><tr><td>Exercise</td><td>2 → 2</td><td>0 → 1</td></tr><tr><td>Sleep</td><td>1 → 0</td><td>1 → 0</td></tr><tr><td>Hydration</td><td>1 → 0</td><td>1 → 0</td></tr></tbody></table></div></details></section>
+<div class="grid"><section class="card">
+    <div class="card-heading"><div><span class="eyebrow">Initial cohort</span><h2>Email 1</h2></div><span class="message-id">XnYUy7</span></div>
+    <div class="metrics">
+      <div class="metric"><span>Klaviyo human CTR</span><strong>0.0%</strong><small>0 of 82</small></div>
+      <div class="metric"><span>Post-send visitors</span><strong>34.1%</strong><small>28 of 82</small></div>
+      <div class="metric"><span>Reached a mini app</span><strong>11.0%</strong><small>9 of 82</small></div>
+      <div class="metric"><span>Meaningfully engaged</span><strong>77.8%</strong><small>7 of 9 mini-app visitors</small></div>
     </div>
-    <footer>“Meaningfully engaged” means completing the configured action for that mini app, not merely opening its page. This page contains aggregate counts only—no emails or user IDs.</footer>
-  </main>
-</body>
-</html>
+    <table><thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead><tbody><tr><td>Ari</td><td>8</td><td>5</td></tr><tr><td>Nia Pulse</td><td>3</td><td>0</td></tr><tr><td>Community</td><td>1</td><td>0</td></tr><tr><td>Nutrition</td><td>3</td><td>3</td></tr><tr><td>Supplements</td><td>1</td><td>2</td></tr><tr><td>Exercise</td><td>1</td><td>1</td></tr></tbody></table>
+    <p class="muted">No other apps had visits or meaningful engagement.</p>
+  </section><section class="card">
+    <div class="card-heading"><div><span class="eyebrow">Redraw cohort</span><h2>Email 1</h2></div><span class="message-id">U84USm</span></div>
+    <div class="metrics">
+      <div class="metric"><span>Klaviyo human CTR</span><strong>0.0%</strong><small>0 of 103</small></div>
+      <div class="metric"><span>Post-send visitors</span><strong>54.4%</strong><small>56 of 103</small></div>
+      <div class="metric"><span>Reached a mini app</span><strong>26.2%</strong><small>27 of 103</small></div>
+      <div class="metric"><span>Meaningfully engaged</span><strong>70.4%</strong><small>19 of 27 mini-app visitors</small></div>
+    </div>
+    <table><thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead><tbody><tr><td>Ari</td><td>22</td><td>19</td></tr><tr><td>Nia Pulse</td><td>8</td><td>0</td></tr><tr><td>Community</td><td>6</td><td>0</td></tr><tr><td>Nutrition</td><td>3</td><td>1</td></tr><tr><td>Supplements</td><td>2</td><td>0</td></tr><tr><td>Blood Pressure</td><td>2</td><td>2</td></tr><tr><td>Hearing</td><td>1</td><td>0</td></tr><tr><td>Sauna &amp; Cold Plunge</td><td>1</td><td>0</td></tr><tr><td>Exercise</td><td>1</td><td>0</td></tr></tbody></table>
+    <p class="muted">No other apps had visits or meaningful engagement.</p>
+  </section><section class="card">
+    <div class="card-heading"><div><span class="eyebrow">Initial cohort</span><h2>Email 2</h2></div><span class="message-id">XVnGPk</span></div>
+    <div class="metrics">
+      <div class="metric"><span>Klaviyo human CTR</span><strong>0.0%</strong><small>0 of 81</small></div>
+      <div class="metric"><span>Post-send visitors</span><strong>25.9%</strong><small>21 of 81</small></div>
+      <div class="metric"><span>Reached a mini app</span><strong>7.4%</strong><small>6 of 81</small></div>
+      <div class="metric"><span>Meaningfully engaged</span><strong>83.3%</strong><small>5 of 6 mini-app visitors</small></div>
+    </div>
+    <table><thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead><tbody><tr><td>Ari</td><td>5</td><td>3</td></tr><tr><td>Nia Pulse</td><td>3</td><td>0</td></tr><tr><td>Community</td><td>1</td><td>0</td></tr><tr><td>Nutrition</td><td>3</td><td>3</td></tr><tr><td>Supplements</td><td>1</td><td>1</td></tr><tr><td>Exercise</td><td>1</td><td>1</td></tr></tbody></table>
+    <p class="muted">No other apps had visits or meaningful engagement.</p>
+  </section><section class="card">
+    <div class="card-heading"><div><span class="eyebrow">Redraw cohort</span><h2>Email 2</h2></div><span class="message-id">U3rEwX</span></div>
+    <div class="metrics">
+      <div class="metric"><span>Klaviyo human CTR</span><strong>2.9%</strong><small>3 of 103</small></div>
+      <div class="metric"><span>Post-send visitors</span><strong>45.6%</strong><small>47 of 103</small></div>
+      <div class="metric"><span>Reached a mini app</span><strong>16.5%</strong><small>17 of 103</small></div>
+      <div class="metric"><span>Meaningfully engaged</span><strong>70.6%</strong><small>12 of 17 mini-app visitors</small></div>
+    </div>
+    <table><thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead><tbody><tr><td>Ari</td><td>13</td><td>11</td></tr><tr><td>Nia Pulse</td><td>5</td><td>0</td></tr><tr><td>Community</td><td>6</td><td>0</td></tr><tr><td>Nutrition</td><td>3</td><td>1</td></tr><tr><td>Supplements</td><td>2</td><td>0</td></tr><tr><td>Blood Pressure</td><td>2</td><td>2</td></tr><tr><td>Hearing</td><td>1</td><td>0</td></tr><tr><td>Sauna &amp; Cold Plunge</td><td>1</td><td>0</td></tr><tr><td>Exercise</td><td>1</td><td>0</td></tr></tbody></table>
+    <p class="muted">No other apps had visits or meaningful engagement.</p>
+  </section><section class="card">
+    <div class="card-heading"><div><span class="eyebrow">Initial cohort</span><h2>Email 3</h2></div><span class="message-id">WAHmeG</span></div>
+    <div class="metrics">
+      <div class="metric"><span>Klaviyo human CTR</span><strong>0.0%</strong><small>0 of 81</small></div>
+      <div class="metric"><span>Post-send visitors</span><strong>19.8%</strong><small>16 of 81</small></div>
+      <div class="metric"><span>Reached a mini app</span><strong>6.2%</strong><small>5 of 81</small></div>
+      <div class="metric"><span>Meaningfully engaged</span><strong>80.0%</strong><small>4 of 5 mini-app visitors</small></div>
+    </div>
+    <table><thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead><tbody><tr><td>Ari</td><td>4</td><td>2</td></tr><tr><td>Nia Pulse</td><td>2</td><td>0</td></tr><tr><td>Community</td><td>1</td><td>0</td></tr><tr><td>Nutrition</td><td>3</td><td>3</td></tr><tr><td>Supplements</td><td>1</td><td>1</td></tr><tr><td>Exercise</td><td>1</td><td>1</td></tr></tbody></table>
+    <p class="muted">No other apps had visits or meaningful engagement.</p>
+  </section><section class="card">
+    <div class="card-heading"><div><span class="eyebrow">Redraw cohort</span><h2>Email 3</h2></div><span class="message-id">WUD8zU</span></div>
+    <div class="metrics">
+      <div class="metric"><span>Klaviyo human CTR</span><strong>2.9%</strong><small>3 of 104</small></div>
+      <div class="metric"><span>Post-send visitors</span><strong>34.6%</strong><small>36 of 104</small></div>
+      <div class="metric"><span>Reached a mini app</span><strong>11.5%</strong><small>12 of 104</small></div>
+      <div class="metric"><span>Meaningfully engaged</span><strong>75.0%</strong><small>9 of 12 mini-app visitors</small></div>
+    </div>
+    <table><thead><tr><th>Mini app</th><th>Visited</th><th>Engaged</th></tr></thead><tbody><tr><td>Ari</td><td>9</td><td>7</td></tr><tr><td>Nia Pulse</td><td>3</td><td>0</td></tr><tr><td>Community</td><td>4</td><td>0</td></tr><tr><td>Nutrition</td><td>2</td><td>1</td></tr><tr><td>Blood Pressure</td><td>2</td><td>2</td></tr><tr><td>Hearing</td><td>1</td><td>0</td></tr><tr><td>Exercise</td><td>1</td><td>0</td></tr></tbody></table>
+    <p class="muted">No other apps had visits or meaningful engagement.</p>
+  </section></div>
+<footer>“Meaningfully engaged” means: Ari message sent; Nia Pulse log completed; Community activity logged; Nutrition food logged; Supplements item marked taken; Brain Health session started; Blood Pressure reading logged; Hearing consent accepted; Cycle day logged. For Sauna, Exercise, Sleep, Hydration, Meditation, and Journal, it means alpha enrollment because no deeper action event is configured. An engagement can appear without a recorded visit event, so an app’s engaged count can exceed its visited count. Each person counts once per metric. Aggregate counts only—no emails or user IDs.</footer>
+</main></body></html>

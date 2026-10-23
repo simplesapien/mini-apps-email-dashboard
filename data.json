@@ -1,24 +1,36 @@
 {
-  "generated_at": "2026-10-19T17:20:09+00:00",
+  "generated_at": "2026-10-23T04:18:27Z",
   "mode": "static",
+  "common_cutoff": "2026-10-23T04:18:27Z",
+  "methodology": {
+    "recipient_matching": "Only product UUIDs mapped to confirmed Klaviyo recipients are counted.",
+    "email_cards": "Cumulative activity from each cohort\u2019s first delivery through the common cutoff; cards overlap and must not be added together.",
+    "lift": "Same Email 1 recipient cohorts in equal-length windows immediately before and after the first send; association only, not causal attribution.",
+    "deduplication": "Each person counts at most once per metric or mini app in a window."
+  },
   "reports": [
     {
       "key": "initial-1",
       "cohort": "Initial",
       "email_number": 1,
       "message_id": "XnYUy7",
-      "sent_after": "2026-10-12T00:00:00-07:00",
-      "sent_before": "2026-10-13T00:00:00-07:00",
+      "first_delivery_at": "2026-10-13T00:10:27Z",
+      "report_through": "2026-10-23T04:18:27Z",
       "delivered": 82,
       "human_clicks": 0,
-      "website_visitors": 19,
-      "app_visitors": 7,
-      "engaged_users": 6,
+      "website_visitors": 28,
+      "app_visitors": 9,
+      "engaged_users": 7,
       "apps": [
         {
           "name": "Ari",
-          "visited": 6,
-          "engaged": 3
+          "visited": 8,
+          "engaged": 5
+        },
+        {
+          "name": "Nia Pulse",
+          "visited": 3,
+          "engaged": 0
         },
         {
           "name": "Community",
@@ -31,21 +43,20 @@
           "engaged": 3
         },
         {
-          "name": "Nia Pulse",
-          "visited": 3,
-          "engaged": 0
-        },
-        {
           "name": "Supplements",
           "visited": 1,
           "engaged": 2
+        },
+        {
+          "name": "Exercise",
+          "visited": 1,
+          "engaged": 1
         }
       ],
-      "mapped": null,
-      "missing": null,
-      "ambiguous": null,
+      "mapped": 82,
+      "missing": 0,
+      "ambiguous": 0,
       "bot_clicks": null,
-      "report_through": null,
       "error": null
     },
     {
@@ -53,28 +64,33 @@
       "cohort": "Redraw",
       "email_number": 1,
       "message_id": "U84USm",
-      "sent_after": "2026-10-12T00:00:00-07:00",
-      "sent_before": "2026-10-13T00:00:00-07:00",
+      "first_delivery_at": "2026-10-13T00:13:04Z",
+      "report_through": "2026-10-23T04:18:27Z",
       "delivered": 103,
       "human_clicks": 0,
-      "website_visitors": 37,
-      "app_visitors": 18,
-      "engaged_users": 12,
+      "website_visitors": 56,
+      "app_visitors": 27,
+      "engaged_users": 19,
       "apps": [
         {
           "name": "Ari",
-          "visited": 13,
-          "engaged": 12
+          "visited": 22,
+          "engaged": 19
         },
         {
           "name": "Nia Pulse",
-          "visited": 6,
+          "visited": 8,
           "engaged": 0
         },
         {
           "name": "Community",
-          "visited": 3,
+          "visited": 6,
           "engaged": 0
+        },
+        {
+          "name": "Nutrition",
+          "visited": 3,
+          "engaged": 1
         },
         {
           "name": "Supplements",
@@ -82,21 +98,30 @@
           "engaged": 0
         },
         {
-          "name": "Nutrition",
+          "name": "Blood Pressure",
           "visited": 2,
-          "engaged": 1
+          "engaged": 2
+        },
+        {
+          "name": "Hearing",
+          "visited": 1,
+          "engaged": 0
         },
         {
           "name": "Sauna & Cold Plunge",
           "visited": 1,
           "engaged": 0
+        },
+        {
+          "name": "Exercise",
+          "visited": 1,
+          "engaged": 0
         }
       ],
-      "mapped": null,
-      "missing": null,
-      "ambiguous": null,
+      "mapped": 103,
+      "missing": 0,
+      "ambiguous": 0,
       "bot_clicks": null,
-      "report_through": null,
       "error": null
     },
     {
@@ -104,23 +129,18 @@
       "cohort": "Initial",
       "email_number": 2,
       "message_id": "XVnGPk",
-      "sent_after": "2026-10-15T00:00:00-07:00",
-      "sent_before": "2026-10-16T00:00:00-07:00",
+      "first_delivery_at": "2026-10-15T16:31:18Z",
+      "report_through": "2026-10-23T04:18:27Z",
       "delivered": 81,
       "human_clicks": 0,
-      "website_visitors": 10,
-      "app_visitors": 4,
-      "engaged_users": 3,
+      "website_visitors": 21,
+      "app_visitors": 6,
+      "engaged_users": 5,
       "apps": [
         {
           "name": "Ari",
-          "visited": 3,
-          "engaged": 1
-        },
-        {
-          "name": "Community",
-          "visited": 1,
-          "engaged": 0
+          "visited": 5,
+          "engaged": 3
         },
         {
           "name": "Nia Pulse",
@@ -128,21 +148,30 @@
           "engaged": 0
         },
         {
+          "name": "Community",
+          "visited": 1,
+          "engaged": 0
+        },
+        {
           "name": "Nutrition",
-          "visited": 2,
-          "engaged": 2
+          "visited": 3,
+          "engaged": 3
         },
         {
           "name": "Supplements",
           "visited": 1,
           "engaged": 1
+        },
+        {
+          "name": "Exercise",
+          "visited": 1,
+          "engaged": 1
         }
       ],
-      "mapped": null,
-      "missing": null,
-      "ambiguous": null,
+      "mapped": 81,
+      "missing": 0,
+      "ambiguous": 0,
       "bot_clicks": null,
-      "report_through": null,
       "error": null
     },
     {
@@ -150,27 +179,142 @@
       "cohort": "Redraw",
       "email_number": 2,
       "message_id": "U3rEwX",
-      "sent_after": "2026-10-15T00:00:00-07:00",
-      "sent_before": "2026-10-16T00:00:00-07:00",
+      "first_delivery_at": "2026-10-15T16:31:21Z",
+      "report_through": "2026-10-23T04:18:27Z",
       "delivered": 103,
       "human_clicks": 3,
-      "website_visitors": 23,
-      "app_visitors": 8,
-      "engaged_users": 5,
+      "website_visitors": 47,
+      "app_visitors": 17,
+      "engaged_users": 12,
+      "apps": [
+        {
+          "name": "Ari",
+          "visited": 13,
+          "engaged": 11
+        },
+        {
+          "name": "Nia Pulse",
+          "visited": 5,
+          "engaged": 0
+        },
+        {
+          "name": "Community",
+          "visited": 6,
+          "engaged": 0
+        },
+        {
+          "name": "Nutrition",
+          "visited": 3,
+          "engaged": 1
+        },
+        {
+          "name": "Supplements",
+          "visited": 2,
+          "engaged": 0
+        },
+        {
+          "name": "Blood Pressure",
+          "visited": 2,
+          "engaged": 2
+        },
+        {
+          "name": "Hearing",
+          "visited": 1,
+          "engaged": 0
+        },
+        {
+          "name": "Sauna & Cold Plunge",
+          "visited": 1,
+          "engaged": 0
+        },
+        {
+          "name": "Exercise",
+          "visited": 1,
+          "engaged": 0
+        }
+      ],
+      "mapped": 103,
+      "missing": 0,
+      "ambiguous": 0,
+      "bot_clicks": null,
+      "error": null
+    },
+    {
+      "key": "initial-3",
+      "cohort": "Initial",
+      "email_number": 3,
+      "message_id": "WAHmeG",
+      "first_delivery_at": "2026-10-19T16:32:04Z",
+      "report_through": "2026-10-23T04:18:27Z",
+      "delivered": 81,
+      "human_clicks": 0,
+      "website_visitors": 16,
+      "app_visitors": 5,
+      "engaged_users": 4,
       "apps": [
         {
           "name": "Ari",
           "visited": 4,
-          "engaged": 4
+          "engaged": 2
+        },
+        {
+          "name": "Nia Pulse",
+          "visited": 2,
+          "engaged": 0
         },
         {
           "name": "Community",
-          "visited": 3,
+          "visited": 1,
           "engaged": 0
+        },
+        {
+          "name": "Nutrition",
+          "visited": 3,
+          "engaged": 3
+        },
+        {
+          "name": "Supplements",
+          "visited": 1,
+          "engaged": 1
+        },
+        {
+          "name": "Exercise",
+          "visited": 1,
+          "engaged": 1
+        }
+      ],
+      "mapped": 81,
+      "missing": 0,
+      "ambiguous": 0,
+      "bot_clicks": null,
+      "error": null
+    },
+    {
+      "key": "redraw-3",
+      "cohort": "Redraw",
+      "email_number": 3,
+      "message_id": "WUD8zU",
+      "first_delivery_at": "2026-10-19T16:32:00Z",
+      "report_through": "2026-10-23T04:18:27Z",
+      "delivered": 104,
+      "human_clicks": 3,
+      "website_visitors": 36,
+      "app_visitors": 12,
+      "engaged_users": 9,
+      "apps": [
+        {
+          "name": "Ari",
+          "visited": 9,
+          "engaged": 7
         },
         {
           "name": "Nia Pulse",
           "visited": 3,
+          "engaged": 0
+        },
+        {
+          "name": "Community",
+          "visited": 4,
           "engaged": 0
         },
         {
@@ -179,22 +323,257 @@
           "engaged": 1
         },
         {
-          "name": "Sauna & Cold Plunge",
+          "name": "Blood Pressure",
+          "visited": 2,
+          "engaged": 2
+        },
+        {
+          "name": "Hearing",
           "visited": 1,
           "engaged": 0
         },
         {
-          "name": "Supplements",
-          "visited": 2,
+          "name": "Exercise",
+          "visited": 1,
           "engaged": 0
         }
       ],
-      "mapped": null,
-      "missing": null,
-      "ambiguous": null,
+      "mapped": 104,
+      "missing": 0,
+      "ambiguous": 0,
       "bot_clicks": null,
-      "report_through": null,
       "error": null
     }
-  ]
+  ],
+  "lift": {
+    "pre_windows": {
+      "Initial": {
+        "start": "2026-10-02T20:02:27Z",
+        "end": "2026-10-13T00:10:27Z"
+      },
+      "Redraw": {
+        "start": "2026-10-02T20:07:41Z",
+        "end": "2026-10-13T00:13:04Z"
+      }
+    },
+    "post_windows": {
+      "Initial": {
+        "start": "2026-10-13T00:10:27Z",
+        "end": "2026-10-23T04:18:27Z"
+      },
+      "Redraw": {
+        "start": "2026-10-13T00:13:04Z",
+        "end": "2026-10-23T04:18:27Z"
+      }
+    },
+    "cohorts": [
+      {
+        "cohort": "Initial",
+        "recipients": 82,
+        "website_visitors": {
+          "pre": {
+            "count": 36,
+            "rate_pct": 43.9
+          },
+          "post": {
+            "count": 28,
+            "rate_pct": 34.1
+          },
+          "absolute_change_pp": -9.8,
+          "relative_change_pct": -22.2
+        },
+        "mini_app_visitors": {
+          "pre": {
+            "count": 20,
+            "rate_pct": 24.4
+          },
+          "post": {
+            "count": 9,
+            "rate_pct": 11.0
+          },
+          "absolute_change_pp": -13.4,
+          "relative_change_pct": -55.0
+        },
+        "engaged_users": {
+          "pre": {
+            "count": 10,
+            "rate_pct": 12.2
+          },
+          "post": {
+            "count": 7,
+            "rate_pct": 8.5
+          },
+          "absolute_change_pp": -3.7,
+          "relative_change_pct": -30.0
+        }
+      },
+      {
+        "cohort": "Redraw",
+        "recipients": 103,
+        "website_visitors": {
+          "pre": {
+            "count": 87,
+            "rate_pct": 84.5
+          },
+          "post": {
+            "count": 56,
+            "rate_pct": 54.4
+          },
+          "absolute_change_pp": -30.1,
+          "relative_change_pct": -35.6
+        },
+        "mini_app_visitors": {
+          "pre": {
+            "count": 28,
+            "rate_pct": 27.2
+          },
+          "post": {
+            "count": 27,
+            "rate_pct": 26.2
+          },
+          "absolute_change_pp": -1.0,
+          "relative_change_pct": -3.6
+        },
+        "engaged_users": {
+          "pre": {
+            "count": 17,
+            "rate_pct": 16.5
+          },
+          "post": {
+            "count": 19,
+            "rate_pct": 18.4
+          },
+          "absolute_change_pp": 1.9,
+          "relative_change_pct": 11.8
+        }
+      },
+      {
+        "cohort": "Combined",
+        "recipients": 185,
+        "website_visitors": {
+          "pre": {
+            "count": 123,
+            "rate_pct": 66.5
+          },
+          "post": {
+            "count": 84,
+            "rate_pct": 45.4
+          },
+          "absolute_change_pp": -21.1,
+          "relative_change_pct": -31.7
+        },
+        "mini_app_visitors": {
+          "pre": {
+            "count": 48,
+            "rate_pct": 25.9
+          },
+          "post": {
+            "count": 36,
+            "rate_pct": 19.5
+          },
+          "absolute_change_pp": -6.5,
+          "relative_change_pct": -25.0
+        },
+        "engaged_users": {
+          "pre": {
+            "count": 27,
+            "rate_pct": 14.6
+          },
+          "post": {
+            "count": 26,
+            "rate_pct": 14.1
+          },
+          "absolute_change_pp": -0.5,
+          "relative_change_pct": -3.7
+        }
+      }
+    ],
+    "combined_apps": [
+      {
+        "name": "Ari",
+        "pre_visited": 31,
+        "post_visited": 30,
+        "pre_engaged": 23,
+        "post_engaged": 24
+      },
+      {
+        "name": "Nia Pulse",
+        "pre_visited": 1,
+        "post_visited": 11,
+        "pre_engaged": 0,
+        "post_engaged": 0
+      },
+      {
+        "name": "Community",
+        "pre_visited": 8,
+        "post_visited": 7,
+        "pre_engaged": 1,
+        "post_engaged": 0
+      },
+      {
+        "name": "Nutrition",
+        "pre_visited": 14,
+        "post_visited": 6,
+        "pre_engaged": 4,
+        "post_engaged": 4
+      },
+      {
+        "name": "Supplements",
+        "pre_visited": 4,
+        "post_visited": 3,
+        "pre_engaged": 2,
+        "post_engaged": 2
+      },
+      {
+        "name": "Brain Health",
+        "pre_visited": 6,
+        "post_visited": 0,
+        "pre_engaged": 1,
+        "post_engaged": 0
+      },
+      {
+        "name": "Blood Pressure",
+        "pre_visited": 2,
+        "post_visited": 2,
+        "pre_engaged": 0,
+        "post_engaged": 2
+      },
+      {
+        "name": "Hearing",
+        "pre_visited": 1,
+        "post_visited": 1,
+        "pre_engaged": 0,
+        "post_engaged": 0
+      },
+      {
+        "name": "Sauna & Cold Plunge",
+        "pre_visited": 0,
+        "post_visited": 1,
+        "pre_engaged": 0,
+        "post_engaged": 0
+      },
+      {
+        "name": "Exercise",
+        "pre_visited": 2,
+        "post_visited": 2,
+        "pre_engaged": 0,
+        "post_engaged": 1
+      },
+      {
+        "name": "Sleep",
+        "pre_visited": 1,
+        "post_visited": 0,
+        "pre_engaged": 1,
+        "post_engaged": 0
+      },
+      {
+        "name": "Hydration",
+        "pre_visited": 1,
+        "post_visited": 0,
+        "pre_engaged": 1,
+        "post_engaged": 0
+      }
+    ],
+    "conclusion": "No aggregate campaign lift was measured. Meaningful engagement was nearly flat; website visits and mini-app reach were lower post-send."
+  }
 }
